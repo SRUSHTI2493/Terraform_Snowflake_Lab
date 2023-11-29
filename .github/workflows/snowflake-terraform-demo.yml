@@ -1,10 +1,9 @@
-name: "Snowflake Terraform Demo Workflow"
+name: Snowflake Terraform Demo Workflow
 
 on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
   snowflake-terraform-demo:
