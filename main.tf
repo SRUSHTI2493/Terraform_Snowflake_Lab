@@ -31,6 +31,23 @@ resource "snowflake_schema" "demo_schema" {
 }
 
 
-
+resource "snowflake_table" "demo_table" {
+  database = snowflake_database.demo_db.name
+  schema   = snowflake_schema.demo_schema.name
+  name     = "DEMO_TABLE"
+  comment  = "Table for Snowflake Terraform demo"
+ 
+  column {
+    name    = "column1"
+    type    = "TEXT"
+    comment = "Description for column1"
+  }
+ 
+  column {
+    name    = "column2"
+    type    = "NUMBER"
+    comment = "Description for column2"
+  }
+}
 
 
