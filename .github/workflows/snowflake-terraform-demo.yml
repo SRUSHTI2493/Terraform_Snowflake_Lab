@@ -1,9 +1,10 @@
-name: Snowflake Terraform Demo Workflow
+name: "Snowflake Terraform Demo Workflow"
 
 on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
   snowflake-terraform-demo:
@@ -72,3 +73,8 @@ jobs:
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve
+
+
+
+
+
