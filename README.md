@@ -1,5 +1,5 @@
 #  :snowflake: Database Change Management with Terraform and GitHub
-
+In my previous role, I worked on automating Snowflake database change management using Terraform and GitHub Actions. The aim was to remove manual database setup and ensure consistent, version-controlled deployments. I wrote Terraform code to create Snowflake databases and schemas and used Terraform Cloud for remote state management and secure credential storage. I also built a GitHub Actions CI/CD pipeline that validates and applies changes automatically whenever code is pushed. This helped improve deployment reliability, reduce manual errors, and made changes easy to track and roll back
 ##  Prerequisites
 This quickstart assumes that you have a basic working knowledge of Git repositories.
 
